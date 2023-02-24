@@ -1,0 +1,209 @@
+header {
+  width: 100%;
+  height: 3000px;
+  /* background-color: yellowgreen; */
+  background: url("../../assets/Banner_bg1.png") no-repeat right top,
+    #f7f3fa url("../../assets/bg.png") no-repeat bottom;
+  background-size: contain;
+}
+.Main_Banner {
+  padding-top: 60px;
+
+  width: 100%;
+  height: max-content;
+}
+.Banner_top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0px 120px;
+  box-sizing: border-box;
+  /* padding-left: 130px; */
+}
+.Banner_get_payment {
+  width: 50%;
+}
+.Banner_main_img {
+  width: 50%;
+}
+.Banner_main_img img {
+  width: 100%;
+  height: 100%;
+}
+.Banner_get_payment h1 {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 54.7642px;
+  line-height: 67px;
+
+  color: #ffffff;
+}
+.Banner_get_payment p {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18.2547px;
+  line-height: 22px;
+  margin: 20px 0px;
+  color: #ffffff;
+}
+.Banner_get_payment button {
+  width: 200px;
+  height: 50px;
+  left: 168px;
+  top: 471px;
+  color: white;
+  font-size: 1rem;
+  font-family: sans-serif;
+
+  background: #798ac9;
+  border: 1px solid rgba(171, 163, 163, 0.2);
+  border-radius: 4px;
+}
+.Banner_mid {
+  width: 100%;
+  /* background-color: seagreen; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px;
+  margin-top: 50px;
+}
+.Banner_mid_left {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.Banner_Main_heading {
+  width: 30%;
+}
+.Banner_Main_heading p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 128.6%;
+  /* or 21px */
+
+  letter-spacing: 0.04em;
+
+  color: #857885;
+  margin: 10px 0px;
+}
+.Banner_Main_heading h3 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 128.6%;
+  /* or 51px */
+
+  letter-spacing: 0.04em;
+
+  color: #857885;
+}
+.Banner_Main_heading h3 span {
+  color: rgba(92, 14, 98, 1);
+}
+
+.Banner_Main_heading a {
+  color: rgba(92, 14, 98, 1);
+}
+.HeaderBrands {
+  width: 70%;
+  /* background-color: sandybrown; */
+  margin: 60px auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.Header_last {
+  width: 100%;
+  /* background-color: orange; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px;
+}
+.Header_last_left {
+  width: 50%;
+}
+.Header_last_right {
+  width: 40%;
+  margin-left: 10px;
+}
+.Header_last_right img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+@media screen and (max-width: 1024px) {
+  header {
+    background-size: auto;
+  }
+  .Banner_top {
+    padding: 0px 44px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    background-size: 100% 20%;
+    height: max-content;
+  }
+  .Banner_Main_heading h3 {
+    font-size: 35px;
+  }
+  .Banner_top {
+    padding: 0px 50px;
+  }
+  .Banner_get_payment {
+    width: 40%;
+  }
+  .Banner_main_img {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 426px) {
+  header {
+    background-image: url("../../assets/Banner_mb.png");
+    height: max-content;
+  }
+  .Banner_top {
+    flex-direction: column;
+    padding: 0 36px;
+  }
+  .Banner_get_payment {
+    width: 100%;
+  }
+  .Banner_get_payment h1 {
+    font-size: 38px;
+    line-height: 40px;
+  }
+  .Banner_main_img {
+    width: 100%;
+    height: max-content;
+  }
+  .Banner_mid_left {
+    display: none;
+  }
+  .Banner_Main_heading h3 {
+    font-size: 24px;
+  }
+  .Banner_Main_heading {
+    width: 75%;
+  }
+  .HeaderBrands {
+    width: 100%;
+    column-gap: 30px;
+  }
+  .Header_last {
+    flex-direction: column !important;
+    row-gap: 40px;
+  }
+  .Header_last_right {
+    width: 95%;
+  }
+}
